@@ -1,0 +1,30 @@
+
+<router-outlet></router-outlet>
+
+<h2> Deteccion de cambios</h2>
+<h3>es igual a "Zone.js"</h3>
+<p>Cambios en los estados</p>
+
+<h2>Para hacer un render dentro de angular hay 3 cosas que las pueden ocasionar</h2>
+<ol>
+    <li>Operaciones asincronas (Async)</li>
+    <li>cualquier tipo de operacion del network/ request, etc</li>
+    <li>Eventos, clicks, keydown, interaccion del usuario</li>
+</ol>
+
+<p>Si trabajamos en un setTimeOut, setInterval utilizamos dependencias, habra un  CONSTRUCTOR, dentro habra un ngzone, se podra decir : ngzone.runoutsideAngular</p>
+<p>COn esto avisamos a angular para que no haga un cambio y lo deje ser</p>
+<br><br>
+
+<h2>Computos Lentos</h2>
+<p>En los cambios por detras angular evaluara expresiones en el template</p>
+<p>Ejecuciones de un cambio en angular : ngDoCheck, ngAfterContent, ngAfterViewCheck, ngOnChanges</p>
+<br>
+<h2>Soluciones</h2>
+<ol>
+    <li>Solucionar el algoritmo</li>
+    <li>Caching : solucionar el caching, osea guardar los resultados de los parametros o pure pipe |</li>
+    <li>Memoization puede guardar mas de un resultado </li>
+    <li>Tratar de que no hayas render XD </li>
+</ol>
+
