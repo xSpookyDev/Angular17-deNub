@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 import { NgIf } from '@angular/common';
@@ -6,6 +6,7 @@ import { NgIf } from '@angular/common';
 @Component({
   selector: 'app-root',
   standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [RouterOutlet, NgIf],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
