@@ -1,4 +1,19 @@
-<h1>Hola desde el componenete padre</h1>
-<div>
-    <app-hijo></app-hijo>
-</div>
+<!--
+
+     
+
+    <app-hijo [datoHijo]="datoPadre" (eventoHijo)="manejadorEventoDelPadre"/>
+
+
+    Forma de pasarse los datos al componente hijo
+-->
+
+
+<app-hijo (mensajeDesdeHijo)="recibirMensaje($event)"
+ (incrementarDesdeHijo)="incrementar()"
+ (decrementarDesdeHijo)="decrementar()"/>
+
+<h1>Contador :</h1>
+<p>{{valorContador}}</p>
+
+<h5>El mensaje recibido desde el hijo es {{mensajeRecibido}}</h5>
