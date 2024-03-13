@@ -1,3 +1,8 @@
+
+<h1>{{nombre}}</h1>
+<button type="button" (click)="saludar();">Saludar</button>
+<button type="button" (click)="preguntar();">preguntar por hijo</button>
+
 <!--
 
      
@@ -6,7 +11,7 @@
 
 
     Forma de pasarse los datos al componente hijo
--->
+
 
 
 <app-hijo (mensajeDesdeHijo)="recibirMensaje($event)"
@@ -17,3 +22,4 @@
 <p>{{valorContador}}</p>
 
 <h5>El mensaje recibido desde el hijo es {{mensajeRecibido}}</h5>
+-->
